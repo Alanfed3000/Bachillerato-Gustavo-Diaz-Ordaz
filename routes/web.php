@@ -10,6 +10,7 @@ use App\Http\Controllers\EstudianteController;
 use App\Http\Controllers\HorariosController;
 use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\Api\DocentesController;
 
 // ------------------------------------------------------------------
 // 1. RUTAS PÚBLICAS (Sin protección)
@@ -18,6 +19,8 @@ use App\Http\Controllers\LoginController;
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('login', [LoginController::class, 'login']);
 Route::post('logout', [LoginController::class, 'logout'])->name('logout');
+
+Route::get('/carreras', [DocentesController::class, 'index']);
 
 
 // ------------------------------------------------------------------

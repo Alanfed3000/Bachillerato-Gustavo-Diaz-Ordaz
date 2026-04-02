@@ -22,3 +22,7 @@ Route::get('/', function () {
 
 Route::apiResource('docentes', DocentesController::class);
 
+Route::get('/test', function() {
+    return "La API responde correctamente";
+});
+

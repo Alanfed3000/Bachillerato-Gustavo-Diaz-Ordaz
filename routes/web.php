@@ -10,7 +10,6 @@ use App\Http\Controllers\EstudianteController;
 use App\Http\Controllers\HorariosController;
 use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\Api\DocentesController;
 
 // ------------------------------------------------------------------
 // 1. RUTAS PÚBLICAS (Sin protección)

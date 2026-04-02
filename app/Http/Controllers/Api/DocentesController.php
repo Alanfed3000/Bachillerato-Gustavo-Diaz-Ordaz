@@ -10,6 +10,7 @@ class DocentesController extends Controller
 {
     public function index()
     {
-        return Docente::all();
+        $docentes = Docente::all();
+        return response()->json($docentes);
     }
 }
